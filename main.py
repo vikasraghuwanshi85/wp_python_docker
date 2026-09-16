@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from typing import List
 from database import WpPost, get_db
 
-app = FastAPI(title="WP to FastAPI - Day 1")
+app = FastAPI(title="WP to Python API", description="A simple FastAPI application to interact with WordPress posts stored in a PostgreSQL database.", version="1.0.0")
 
 class PostCreate(BaseModel):
     title: str
